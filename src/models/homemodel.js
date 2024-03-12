@@ -8,7 +8,7 @@ const create = async (body) => {
         VALUES (?, ?, ?, ?, ?)`, [nome_completo, altura, peso, idade, profissao]);
         return sql;
     } catch (error) {
-        throw error;
+        console.error(error);
     }
 }
 
